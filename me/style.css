@@ -1,0 +1,31 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+input, select {
+  margin: 5px;
+  padding: 5px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+  background: white;
+  margin: 15% auto;
+  padding: 20px;
+  width: 300px;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 5px; right: 10px;
+  cursor: pointer;
+}

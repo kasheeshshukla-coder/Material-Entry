@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Material Entry App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Login Page -->
+  <div id="login-page">
+    <h2>Login</h2>
+    <input type="text" id="username" placeholder="Username" required />
+    <input type="password" id="password" placeholder="Password" required />
+    <button onclick="login()">Login</button>
+  </div>
+
+  <!-- Main App -->
+  <div id="main-app" style="display:none;">
+    <h2>Material Entry Form</h2>
+    <div id="form-container"></div>
+    <button onclick="addEntry()">Add Entry</button>
+    <button onclick="submitEntries()">Submit to Google Sheets</button>
+  </div>
+
+  <!-- Modal for Popups -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h3 id="modal-title">Add New Option</h3>
+      <input type="text" id="new-option" placeholder="Enter new option" />
+      <button onclick="addOption()">Add</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
